@@ -65,7 +65,7 @@
                     <div>
                     <h2>Meu segundo post</h2>
                     <p class="artigo-autor">Por: Artur Pedro</p>
-                    <p>Seja bem vindo ao meu Blog! aqui eu dou dicas sobre o agronegocio.</p>
+                    <p>qual sua duvida sobre o agro negocio?</p>
                     <button>❤️ <span>0</span></button>
                     <button>😂 <span>0</span></button>
                 </div>
@@ -83,10 +83,11 @@
             let texto = botao.querySelector("span");
             if (curtiu === false){           
                 texto.textContent++;
-                curtiu = true
-            
+                curtiu = true;
+            }else{
+                texto.textContent--;
+                curtiu = false;
             }
-        }
     })
 
 
