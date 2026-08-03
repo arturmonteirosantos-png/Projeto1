@@ -1,70 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Blog</title>
-        <style>
-            header{
-                background-color:
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        header {
+            background-color:
                 #23002B;
-                color:#ffffff;
-                text-align: center;
-                max-width: 800px;
-                margin: 0 auto;
-                padding: 16px;
-                border: 5px solid 
-                #cf1010;
+            color: #ffffff;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 16px;
+            border: 5px solid #cf1010;
 
-            }
-            main{
-                background-color:
+        }
+
+        main {
+            background-color:
                 #ffffff;
-                color: #23002B;
-                max-width: 800px;
-                margin: 0 auto;
-                padding: 16px;
-            }
-            img{
-                width: 80px;
-                height: 80px;
-            }
-                .artigo-autor {
-                    font-weight: bold;
-                }
-        </style>
-    </head>
+            color: #23002B;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 16px;
+        }
 
-    <body>
-        </header>
+        img {
+            width: 80px;
+            height: 80px;
+        }
+
+        .artigo-autor {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    </header>
     <h1>Meu blog agro</h1>
     <p>Vou compartilhar conhecimentos sobre agronegocio</p>
     </header>
     <main>
-    <img src="P1LLE.jpg" 
-        alt="cone quadrado com um broto de planta verde crescendo no solo e uma engrenagem ao fundo, representando inovação e dicas de agronegócio">
-        <div>
-    <h2>Meu primeiro post</h2>
-    <p class="artigo-autor">Por: Artur Pedro</p>
-    <p>Seja bem vindo ao meu Blog! aqui eu dou dicas sobre o agronegocio.</p>
-    <button>❤️ <span>0</span></button>
-    <button>😂 <span>0</span></button>
-    </div>
-
-   </main>
+        <article>
+            <img src="P1LLE.jpg" alt="cone quadrado com um broto de
+                     planta verde crescendo no solo e uma engrenagem ao fundo, representando
+                      inovação e dicas de agronegócio">
+            <div>
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Artur Pedro</p>
+                <p>Seja bem vindo ao meu Blog! aqui eu dou dicas sobre o agronegocio.</p>
+                <button>❤️ <span>0</span></button>
+                <button>😂 <span>0</span></button>
+            </div>
+            <article>
+                <article>
+                    <img src="P1LLE.jpg" alt="cone quadrado com um broto de
+                             planta verde crescendo no solo e uma engrenagem ao fundo, representando
+                              inovação e dicas de agronegócio">
+                    <div>
+                    <h2>Meu primeiro post</h2>
+                    <p class="artigo-autor">Por: Artur Pedro</p>
+                    <p>Seja bem vindo ao meu Blog! aqui eu dou dicas sobre o agronegocio.</p>
+                    <button>❤️ <span>0</span></button>
+                    <button>😂 <span>0</span></button>
+                </div>
+                </article>
+    </main>
 </body>
 <script>
     const botoes = document.querySelector("button");
 
-    botoes.forEach (function(botao){
-    botao.addEventListener("click", BotaoClicado); 
-    function BotaoClicado(){
-        console.log("fui clicado");
-        let texto = botao.querySelector("span");
-        texto.textContent++;
-    }
-})
+    botoes.forEach(function (botao) {
+        botao.addEventListener("click", BotaoClicado);
+        function BotaoClicado() {
+            console.log("fui clicado");
+            let texto = botao.querySelector("span");
+            texto.textContent++;
+        }
+    })
 
 
 </script>
+
 </html>
