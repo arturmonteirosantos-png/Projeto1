@@ -29,8 +29,12 @@
                 width: 80px;
                 height: 80px;
             }
+                .artigo-autor {
+                    font-weight: bold;
+                }
         </style>
     </head>
+
     <body>
         </header>
     <h1>Meu blog agro</h1>
@@ -41,12 +45,19 @@
     <h2>Meu primeiro post</h2>
     <p>Por: Artur Pedro</p>
     <p>Seja bem vindo ao meu Blog! aqui eu dou dicas sobre o agronegocio.</p>
-    <button>🔘 <span>0</span></button>
+    <button>❤️ <span>0</span></button>
     </div>
    </main>
 </body>
 <script>
-    const botao = document.querySelector(button);
-    botao.addEvent
+    const botao = document.querySelector("button");
+    botao.addEventListener("click", BotaoClicado)
+
+function BotaoClicado(){
+    console.log("fui clicado");
+    let texto = botao.querySelector("span");
+    texto.textContent++;
+}
+
 </script>
 </html>
